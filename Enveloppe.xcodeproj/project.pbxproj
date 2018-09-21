@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		774F95D12150EBE400BC48DD /* Enveloppe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F95D02150EBE400BC48DD /* Enveloppe.swift */; };
-		774F95DE2150EBFE00BC48DD /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F95DD2150EBFE00BC48DD /* Tests.swift */; };
 		774F95E02150EBFE00BC48DD /* libEnveloppe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774F95CD2150EBE400BC48DD /* libEnveloppe.a */; };
-		774F95E82150F6BB00BC48DD /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F95E72150F6BB00BC48DD /* URLRequest.swift */; };
+		77D3A6D12154AE0D0066D3F6 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D02154AE0D0066D3F6 /* Stubs.swift */; };
+		77D3A6D32154AFFA0066D3F6 /* EnveloppeSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D22154AFFA0066D3F6 /* EnveloppeSerializerTests.swift */; };
+		77D3A6D62154CAC90066D3F6 /* EnveloppeSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D52154CAC90066D3F6 /* EnveloppeSerializer.swift */; };
+		77D3A6DC2154D3D20066D3F6 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6DB2154D3D20066D3F6 /* XCTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,11 @@
 		774F95CD2150EBE400BC48DD /* libEnveloppe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEnveloppe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		774F95D02150EBE400BC48DD /* Enveloppe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enveloppe.swift; sourceTree = "<group>"; };
 		774F95DB2150EBFE00BC48DD /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		774F95DD2150EBFE00BC48DD /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		774F95DF2150EBFE00BC48DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		774F95E72150F6BB00BC48DD /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		77D3A6D02154AE0D0066D3F6 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		77D3A6D22154AFFA0066D3F6 /* EnveloppeSerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeSerializerTests.swift; sourceTree = "<group>"; };
+		77D3A6D52154CAC90066D3F6 /* EnveloppeSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeSerializer.swift; sourceTree = "<group>"; };
+		77D3A6DB2154D3D20066D3F6 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				774F95D02150EBE400BC48DD /* Enveloppe.swift */,
-				774F95E72150F6BB00BC48DD /* URLRequest.swift */,
+				77D3A6D52154CAC90066D3F6 /* EnveloppeSerializer.swift */,
 			);
 			path = Enveloppe;
 			sourceTree = "<group>";
@@ -93,10 +97,20 @@
 		774F95DC2150EBFE00BC48DD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				774F95DD2150EBFE00BC48DD /* Tests.swift */,
-				774F95DF2150EBFE00BC48DD /* Info.plist */,
+				77D3A6CF2154ADF70066D3F6 /* Helpers */,
+				77D3A6D22154AFFA0066D3F6 /* EnveloppeSerializerTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		77D3A6CF2154ADF70066D3F6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				774F95DF2150EBFE00BC48DD /* Info.plist */,
+				77D3A6D02154AE0D0066D3F6 /* Stubs.swift */,
+				77D3A6DB2154D3D20066D3F6 /* XCTestCase.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				774F95D12150EBE400BC48DD /* Enveloppe.swift in Sources */,
-				774F95E82150F6BB00BC48DD /* URLRequest.swift in Sources */,
+				77D3A6D62154CAC90066D3F6 /* EnveloppeSerializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				774F95DE2150EBFE00BC48DD /* Tests.swift in Sources */,
+				77D3A6D32154AFFA0066D3F6 /* EnveloppeSerializerTests.swift in Sources */,
+				77D3A6DC2154D3D20066D3F6 /* XCTestCase.swift in Sources */,
+				77D3A6D12154AE0D0066D3F6 /* Stubs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = Tests/Helpers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = Tests/Helpers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
