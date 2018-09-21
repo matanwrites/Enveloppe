@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		774F95D12150EBE400BC48DD /* Enveloppe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F95D02150EBE400BC48DD /* Enveloppe.swift */; };
+		774F95DE2150EBFE00BC48DD /* EnveloppeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F95DD2150EBFE00BC48DD /* EnveloppeTests.swift */; };
 		774F95E02150EBFE00BC48DD /* libEnveloppe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774F95CD2150EBE400BC48DD /* libEnveloppe.a */; };
 		77D3A6D12154AE0D0066D3F6 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D02154AE0D0066D3F6 /* Stubs.swift */; };
 		77D3A6D32154AFFA0066D3F6 /* EnveloppeSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D22154AFFA0066D3F6 /* EnveloppeSerializerTests.swift */; };
 		77D3A6D62154CAC90066D3F6 /* EnveloppeSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D52154CAC90066D3F6 /* EnveloppeSerializer.swift */; };
+		77D3A6D82154CD5C0066D3F6 /* EnveloppeInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D72154CD5C0066D3F6 /* EnveloppeInputs.swift */; };
+		77D3A6DA2154CD760066D3F6 /* EnveloppeOutputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D92154CD760066D3F6 /* EnveloppeOutputs.swift */; };
 		77D3A6DC2154D3D20066D3F6 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6DB2154D3D20066D3F6 /* XCTestCase.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +44,13 @@
 		774F95CD2150EBE400BC48DD /* libEnveloppe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEnveloppe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		774F95D02150EBE400BC48DD /* Enveloppe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enveloppe.swift; sourceTree = "<group>"; };
 		774F95DB2150EBFE00BC48DD /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		774F95DD2150EBFE00BC48DD /* EnveloppeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeTests.swift; sourceTree = "<group>"; };
 		774F95DF2150EBFE00BC48DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D3A6D02154AE0D0066D3F6 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
 		77D3A6D22154AFFA0066D3F6 /* EnveloppeSerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeSerializerTests.swift; sourceTree = "<group>"; };
 		77D3A6D52154CAC90066D3F6 /* EnveloppeSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeSerializer.swift; sourceTree = "<group>"; };
+		77D3A6D72154CD5C0066D3F6 /* EnveloppeInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeInputs.swift; sourceTree = "<group>"; };
+		77D3A6D92154CD760066D3F6 /* EnveloppeOutputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeOutputs.swift; sourceTree = "<group>"; };
 		77D3A6DB2154D3D20066D3F6 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +96,8 @@
 			children = (
 				774F95D02150EBE400BC48DD /* Enveloppe.swift */,
 				77D3A6D52154CAC90066D3F6 /* EnveloppeSerializer.swift */,
+				77D3A6D72154CD5C0066D3F6 /* EnveloppeInputs.swift */,
+				77D3A6D92154CD760066D3F6 /* EnveloppeOutputs.swift */,
 			);
 			path = Enveloppe;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				77D3A6CF2154ADF70066D3F6 /* Helpers */,
+				774F95DD2150EBFE00BC48DD /* EnveloppeTests.swift */,
 				77D3A6D22154AFFA0066D3F6 /* EnveloppeSerializerTests.swift */,
 			);
 			path = Tests;
@@ -225,6 +234,8 @@
 			files = (
 				774F95D12150EBE400BC48DD /* Enveloppe.swift in Sources */,
 				77D3A6D62154CAC90066D3F6 /* EnveloppeSerializer.swift in Sources */,
+				77D3A6D82154CD5C0066D3F6 /* EnveloppeInputs.swift in Sources */,
+				77D3A6DA2154CD760066D3F6 /* EnveloppeOutputs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D3A6D32154AFFA0066D3F6 /* EnveloppeSerializerTests.swift in Sources */,
+				774F95DE2150EBFE00BC48DD /* EnveloppeTests.swift in Sources */,
 				77D3A6DC2154D3D20066D3F6 /* XCTestCase.swift in Sources */,
 				77D3A6D12154AE0D0066D3F6 /* Stubs.swift in Sources */,
 			);
