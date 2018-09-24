@@ -16,8 +16,10 @@
 		77D3A6D82154CD5C0066D3F6 /* EnveloppeInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D72154CD5C0066D3F6 /* EnveloppeInputs.swift */; };
 		77D3A6DA2154CD760066D3F6 /* EnveloppeOutputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6D92154CD760066D3F6 /* EnveloppeOutputs.swift */; };
 		77D3A6DC2154D3D20066D3F6 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A6DB2154D3D20066D3F6 /* XCTestCase.swift */; };
+		83BFE76D21580BEC0094F923 /* EnveloppeFetchableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BFE76C21580BEC0094F923 /* EnveloppeFetchableTests.swift */; };
 		83BFE76F2158A8C70094F923 /* EnveloppeErrorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BFE76E2158A8C70094F923 /* EnveloppeErrorObserver.swift */; };
 		83BFE7712158AB090094F923 /* EnveloppeErrorObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BFE7702158AB090094F923 /* EnveloppeErrorObserverTests.swift */; };
+		83BFE7732158D1F50094F923 /* EnveloppeFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BFE7722158D1F50094F923 /* EnveloppeFetchable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,10 @@
 		77D3A6D72154CD5C0066D3F6 /* EnveloppeInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeInputs.swift; sourceTree = "<group>"; };
 		77D3A6D92154CD760066D3F6 /* EnveloppeOutputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeOutputs.swift; sourceTree = "<group>"; };
 		77D3A6DB2154D3D20066D3F6 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		83BFE76C21580BEC0094F923 /* EnveloppeFetchableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeFetchableTests.swift; sourceTree = "<group>"; };
 		83BFE76E2158A8C70094F923 /* EnveloppeErrorObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeErrorObserver.swift; sourceTree = "<group>"; };
 		83BFE7702158AB090094F923 /* EnveloppeErrorObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeErrorObserverTests.swift; sourceTree = "<group>"; };
+		83BFE7722158D1F50094F923 /* EnveloppeFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnveloppeFetchable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 				774F95D02150EBE400BC48DD /* Enveloppe.swift */,
 				77D3A6D52154CAC90066D3F6 /* EnveloppeSerializer.swift */,
 				77D3A6D72154CD5C0066D3F6 /* EnveloppeInputs.swift */,
+				83BFE7722158D1F50094F923 /* EnveloppeFetchable.swift */,
 				77D3A6D92154CD760066D3F6 /* EnveloppeOutputs.swift */,
 				83BFE76E2158A8C70094F923 /* EnveloppeErrorObserver.swift */,
 			);
@@ -113,6 +118,7 @@
 				77D3A6CF2154ADF70066D3F6 /* Helpers */,
 				774F95DD2150EBFE00BC48DD /* EnveloppeTests.swift */,
 				77D3A6D22154AFFA0066D3F6 /* EnveloppeSerializerTests.swift */,
+				83BFE76C21580BEC0094F923 /* EnveloppeFetchableTests.swift */,
 				83BFE7702158AB090094F923 /* EnveloppeErrorObserverTests.swift */,
 			);
 			path = Tests;
@@ -241,6 +247,7 @@
 				774F95D12150EBE400BC48DD /* Enveloppe.swift in Sources */,
 				77D3A6D62154CAC90066D3F6 /* EnveloppeSerializer.swift in Sources */,
 				83BFE76F2158A8C70094F923 /* EnveloppeErrorObserver.swift in Sources */,
+				83BFE7732158D1F50094F923 /* EnveloppeFetchable.swift in Sources */,
 				77D3A6D82154CD5C0066D3F6 /* EnveloppeInputs.swift in Sources */,
 				77D3A6DA2154CD760066D3F6 /* EnveloppeOutputs.swift in Sources */,
 			);
@@ -254,6 +261,7 @@
 				774F95DE2150EBFE00BC48DD /* EnveloppeTests.swift in Sources */,
 				77D3A6DC2154D3D20066D3F6 /* XCTestCase.swift in Sources */,
 				83BFE7712158AB090094F923 /* EnveloppeErrorObserverTests.swift in Sources */,
+				83BFE76D21580BEC0094F923 /* EnveloppeFetchableTests.swift in Sources */,
 				77D3A6D12154AE0D0066D3F6 /* Stubs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,30 +9,23 @@
 import Foundation
 
 
+// MARK: - Envelopable
+public protocol Enveloppable: Encodable, URLRepresentable {
+    associatedtype LetterType: Decodable
+}
+
+
 public protocol URLRepresentable {
     var path: String { get }
     var url: URL { get }
 }
 
 
-public protocol Envelopable: Encodable, URLRepresentable {
-    associatedtype LetterType: Decodable
+// MARK: - EnveloppeSerializable
+public protocol EnveloppeSerializable {
+    func buildJSON(method: EnveloppeMethod, url: URL, data: Data) -> URLRequest
 }
-
-
-extension Envelopable {
-    public func fetch(completion: @escaping (LetterType) -> Void) {
-        let client = Enveloppe()
-        client.errorDelegate = EnveloppeErrorObserver.instance
-        client.post(request: self, completion: completion)
-    }
-}
-
 
 public enum EnveloppeMethod: String {
     case POST
-}
-
-public protocol EnveloppeSerializable {
-    func buildJSON(method: EnveloppeMethod, url: URL, data: Data) -> URLRequest
 }
