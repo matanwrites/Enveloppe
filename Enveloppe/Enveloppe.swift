@@ -23,7 +23,7 @@ public class Enveloppe {
         self.queue = queue
     }
     
-    public func post<E: Envelopable, D: Decodable>(request: E, completion: @escaping (D) -> Void) {
+    public func post<E: Enveloppable, D: Decodable>(request: E, completion: @escaping (D) -> Void) {
         let urlRequest: URLRequest
         do {
             urlRequest = try buildRequest(request, method: .POST)
@@ -67,7 +67,7 @@ public class Enveloppe {
 
 
 extension Enveloppe {
-    func buildRequest<E: Envelopable>(_ request: E, method: EnveloppeMethod) throws -> URLRequest {
+    func buildRequest<E: Enveloppable>(_ request: E, method: EnveloppeMethod) throws -> URLRequest {
         let data = try JSONEncoder().encode(request)
         return serializer.buildJSON(method: method, url: request.url, data: data)
     }

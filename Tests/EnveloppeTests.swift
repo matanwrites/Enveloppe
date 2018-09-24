@@ -156,7 +156,7 @@ class EnveloppeSerializerMock: EnveloppeSerializable {
     }
 }
 
-struct EnveloppeStub: Envelopable {
+struct EnveloppeStub: Enveloppable {
     typealias LetterType = LetterStub
     
     //url representable
