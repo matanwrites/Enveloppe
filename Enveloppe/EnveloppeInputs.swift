@@ -17,8 +17,15 @@ public protocol URLRepresentable {
 
 public protocol Envelopable: Encodable, URLRepresentable {
     associatedtype LetterType: Decodable
-    
-    func fetch(completion: @escaping (LetterType) -> Void)
+}
+
+
+extension Envelopable {
+    public func fetch(completion: @escaping (LetterType) -> Void) {
+        let client = Enveloppe()
+        client.errorDelegate = EnveloppeErrorObserver.instance
+        client.post(request: self, completion: completion)
+    }
 }
 
 
